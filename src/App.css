@@ -1,27 +1,396 @@
-.App {
+/********** LOGIN PAGE ***********/
+
+.loginPage {
+  background-color: rgba(226, 192, 255, 0.673);
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#inspo {
+  font-size: 3.5rem;
+  font-family: "Risque", sans-serif;
+  color: rgb(189, 102, 240);
+  padding-right: 60px;
+  padding-top: 50px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  padding-right: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label p {
+  font-family: "Montserrat", sans-serif;
+  padding-right: 50px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 1rem;
+  background-color: rgb(245, 117, 138);
+  margin-right: 50px;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#p3 {
+  margin-right: 50px;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#p4 {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+a {
+  color: rgb(245, 117, 138);
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+#p5 {
+  margin-right: 50px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/********** SIGN UP PAGE ***********/
+
+.signupPage {
+  background-color: rgba(226, 192, 255, 0.673);
+  height: 100vh;
+  top: 0;
+  text-align: center;
+}
+
+#inspo2 {
+  font-size: 3.5rem;
+  font-family: "Risque", sans-serif;
+  color: rgb(189, 102, 240);
+  margin-left: 0px;
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+#form2 {
+  margin-left: 50px;
+}
+
+#agree {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#already {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#loginButton {
+  font-size: 1rem;
+  margin-right: 0px;
+  margin-bottom: 0;
+}
+
+/*********** FEED PAGE ************/
+
+.feed {
+  background-color: rgba(226, 192, 255, 0.673);
+}
+
+#header1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: sticky;
+  justify-content: space-between;
+  background-color: rgb(255, 177, 190);
+  top: 0;
+  padding-right: 50px;
+  border: solid 1px rgb(179, 179, 179);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#header1 h3 {
+  color: rgb(189, 102, 240);
+  font-family: "Risque", sans-serif;
+  font-size: 2.3rem;
+  margin-left: 6vw;
+  margin-top: 2.5vh;
+  margin-bottom: 3vh;
+  margin-right: auto;
+}
+
+.icons {
+  display: flex;
+  padding-top: 5px;
+  margin-top: 3vh;
+  margin-left: 10vw;
+  color: rgb(238, 87, 112);
+}
+
+#profilename {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 3px;
+}
+
+#addBox {
+  padding-right: 20px;
+}
+
+#profilePic {
+  margin-left: 20px;
+  width: 35px;
+  height: 30px;
+  max-width: 600px;
+  border-radius: 50%;
+}
+
+#logout {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 3px;
+  padding-left: 50px;
+}
+
+.stories {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 20px;
+  border-style: solid;
+  border-color: pink;
+  border-width: 3px;
+}
+
+.pic {
+  margin-left: 10px;
+  width: 60px;
+  height: 40px;
+}
+
+.picsize {
+  width: 50px;
+  max-width: 600px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wholePost {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postInfo {
+  display: flex;
+  width: 300px;
+  max-width: 600px;
+  margin-left: 60px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: pink;
+  border-width: 3px;
+  padding-top: 15px;
+  padding-right: 95px;
+  padding-bottom: 5px;
+}
+
+.postInfo p {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+  margin-top: 8px;
+}
+
+#dog2 {
+  width: 100vh;
+  max-width: 400px;
+  margin-top: 0px;
+  margin-right: 555px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+#description {
+  font-family: "Montserrat", sans-serif;
+}
+
+#tabby {
+  width: 100vh;
+  max-width: 400px;
+  margin-top: 0px;
+  margin-right: 555px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+#pup {
+  width: 100vh;
+  max-width: 400px;
+  margin-top: 0px;
+  margin-right: 555px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+.entirePost {
+  border: solid 3px pink;
+  border-style: solid;
+  width: 395px;
+  max-width: 600px;
+  margin-left: 60px;
+  margin-right: 555px;
+}
+
+.icons2 {
+  display: flex;
+  color: rgb(238, 87, 112);
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+#purpleheart {
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  padding-left: 15px;
+  padding-top: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.likedBy {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+}
+
+#profilePic2 {
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 30px;
+  height: 25px;
+  max-width: 600px;
+  border-radius: 50%;
+}
+
+.likedBy p {
+  padding-left: 10px;
+  padding-top: 6px;
+  font-size: 0.9rem;
+}
+
+#description {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+#comments {
+  color: rgb(125, 125, 125);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  padding-top: 8px;
+}
+
+.comment1 {
+  display: flex;
+  margin-left: 10px;
+}
+
+.comment1 div {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#heartEyes {
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+#eyes {
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+.comment2 {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.comment2 div {
+  font-size: 0.9rem;
+  padding-top: 3px;
+}
+
+#doghead {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+#days {
+  font-size: 0.7rem;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  color: rgb(125, 125, 125);
+}
+
+.addComment {
+  display: flex;
+  border: 3px solid pink;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+}
+
+#add {
+  font-size: 0.8rem;
+  color: rgb(125, 125, 125);
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+#post {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: pink;
+  padding-left: 200px;
+  padding-top: 5px;
 }
 
 .App-link {
